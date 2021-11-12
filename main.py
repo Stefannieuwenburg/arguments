@@ -6,8 +6,8 @@ __human_name__ = 'arguments'
 
 # part 1:
 def greet(name:str, greeting:str = 'Hello, <name>!'):
-    greeting = greeting.replace('<name>', name)
-    return print(greeting)
+    return greeting.replace('<name>', name)
+
 greet('Bob')
 print(greet('Bob', "What's up, <name>!"))
 greet('Stefan')
