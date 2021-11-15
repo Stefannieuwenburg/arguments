@@ -29,7 +29,7 @@ def force(mass:float, body:str = 'earth'):
         ('moon', 1.6),
         ('pluto', 0.6)
     ])
-    print(mass * gravitylist[body])
+    return (mass * gravitylist[body])
 
 
 force(18.2)
@@ -39,8 +39,8 @@ force(18.2)
 G = 6.674 * (10**-11)
 
 def pull(m1:float, m2:float, d:float):
-    print(G * (m1 * m2) / (d**2))
-    return
+    return (G * (m1 * m2) / (d**2))
+    
 
 
 pull(100,200,0.5)
